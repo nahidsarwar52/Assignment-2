@@ -1,6 +1,6 @@
 @import url(style.css);
 
-#item-1-matches {
+#item-1-match {
     background-color: red;
     color: white;
     font-size: 25px;
@@ -27,11 +27,40 @@
     font-weight: 700;
 }
 
-.play-card ul {
+.match-card ul {
     display: flex;
     margin-left: 14%;
 }
 
-.play-card ul li {
+.match-card ul li {
     list-style-type: none;
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (max-width: 768px) {
+    #item-3 {
+        border: 1px solid silver;
+    }
+
+    #container-card {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .match-card ul {
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container-card {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .match-card ul {
+        margin-left: 45px
+    }
 }

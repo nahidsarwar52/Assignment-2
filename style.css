@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header {
     width: 90%;
     margin: 0 auto;
@@ -25,7 +30,7 @@ body {
 }
 
 .header-title h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 0;
     width: 60%;
 }
@@ -75,7 +80,7 @@ body {
 
 .header-button:hover {
     animation-name: btn-animation;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 
 #blog {
@@ -159,6 +164,10 @@ body {
     font-size: 20px;
 }
 
+.bonus {
+    display: none;
+}
+
 footer {
     background-color: #333;
     width: 100%;
@@ -197,4 +206,185 @@ footer ul li {
 .social-icon {
     font-size: 50px;
     color: white;
+}
+
+/* Responsive CSS */
+
+/* Tablet */
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 90%;
+        display: flex;
+    }
+
+    .header-title,
+    .header-img {
+        width: 50%;
+    }
+
+    .header-title h1 {
+        font-size: 3em;
+    }
+
+    .header-title h4 {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header-button {
+        padding: 5px 5px;
+    }
+
+    .header-button a,
+    .arrow {
+        font-size: 10px;
+    }
+
+    .banner-image {
+        width: 100%;
+
+    }
+
+    #blog {
+        width: 90%;
+        display: block;
+
+    }
+
+    .blog-menu {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .blog-menu ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 0;
+    }
+
+    .blog-menu ul li {
+        font-size: 15px;
+        margin-bottom: 185px;
+        margin-right: 10px;
+    }
+
+    .item-1,
+    .item-2 {
+        border: 1px solid silver;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: -120px;
+    }
+
+    .bonus {
+        text-align: center;
+        display: block;
+    }
+
+    .view-all {
+        background-color: red;
+        color: white;
+        border: 0px;
+        border-radius: 3px;
+        font-size: 40px;
+        margin-top: 30px;
+        padding: 5px 10px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .social-icon {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    .header {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .header-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-left: 61px;
+        font-size: 30px;
+    }
+
+    .header h4 {
+        margin-left: 20px;
+    }
+
+    .header-button {
+        margin: 0 auto;
+        margin-left: -20px;
+    }
+
+    .banner-image {
+        margin: 0;
+        margin-top: 21px;
+        margin-left: 18px;
+    }
+
+    #blog {
+        margin-top: 50px;
+    }
+
+    .item-2 {
+        border: 1px solid silver;
+    }
+
+    .blog-menu ul {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: -36px;
+    }
+
+    .blog-menu ul li {
+        margin-bottom: 5px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 100px;
+    }
+
+    .bonus {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-text ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
 }
