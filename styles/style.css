@@ -73,7 +73,7 @@ body {
     }
 }
 
-.header-btn:hover {
+.header-button:hover {
     animation-name: btn-animation;
     animation-duration: 1.5s;
 }
